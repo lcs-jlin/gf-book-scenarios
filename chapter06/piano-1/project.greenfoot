@@ -1,10 +1,10 @@
 #Greenfoot project file
 class.Key.image=white-key.png
 class.Piano.image=wood.jpg
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
+editor.fx.0.height=562
+editor.fx.0.width=839
+editor.fx.0.x=315
+editor.fx.0.y=45
 height=523
 package.numDependencies=0
 package.numTargets=2
@@ -42,4 +42,4 @@ version=3.0.0
 width=1052
 world.lastInstantiated=Piano
 xPosition=92
-yPosition=52
+yPosition=46
