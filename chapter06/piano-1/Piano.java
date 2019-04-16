@@ -45,7 +45,8 @@ public class Piano extends World
         // Every second say hello to the nest person in the list
         // Use a Boolean AND to track both conditions
         // The shwotext statement only runs when BOTH conditions are true
-        if ((frames % 60 == 0) && (frames % 60 < 12)) 
+        //NOTE:white
+        if ((frames % 60 == 0) && (frames % 60 < whiteKeys.length)) 
         {
             if ( frames / 60 < 10 )
             {
