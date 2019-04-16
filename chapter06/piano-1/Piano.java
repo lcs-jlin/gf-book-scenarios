@@ -19,6 +19,11 @@ public class Piano extends World
             "Minah", "Brandon", "Jeewoo", "Peter", "Justy" 
         };
 
+        // Track the white keys and notes
+        String[] whiteKeys = {"a", "s", "d", "f", "g", "h", "j", "k", "l",
+            "i", "'", "\\"};
+            String[] whiteNotes = {"3c", "3d", "3e", "3f", "3g", "3a", "3b", "4c",
+            "4e", "4f", "4g"};
     /**
      * Make the piano.
      */
@@ -40,7 +45,7 @@ public class Piano extends World
         // Every second say hello to the nest person in the list
         // Use a Boolean AND to track both conditions
         // The shwotext statement only runs when BOTH conditions are true
-        if ((frames % 60 == 0) && (frames % 60 < 10)) 
+        if ((frames % 60 == 0) && (frames % 60 < 12)) 
         {
             if ( frames / 60 < 10 )
             {
