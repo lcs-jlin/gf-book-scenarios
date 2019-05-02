@@ -12,16 +12,20 @@ public class Key extends Actor
     // (key and sound are object stata types - shows in black, type is Capitalized)
     private String key;
     private String sound;
+    private boolean keyWhite;
+    
     /**
      * Create a new key.
      */
-    public Key(String keyName, String soundFile)
+    public Key(String keyName, String soundFile, boolean isKeyWhite)
     {
         // Key begins in the "up" position
         isDown = false;
         // Initialize the key and sound instance variables
         key = keyName;
         sound = soundFile;
+        keyWhite = isKeyWhite;
+        
     }
 
     /**
@@ -38,6 +42,16 @@ public class Key extends Actor
         if (isDown == true && Greenfoot.isKeyDown (key) == false)
         {
             setImage("white-key.png");
+        }
+        if (isDown == false && Greenfoot.isKeyDown(key))
+        {
+            setImage("black-key-down.png");
+            isDown = true;
+            play();
+        }
+        if (isDown == true && Greenfoot.isKeyDown (key) == false)
+        {
+            setImage("black-key.png");
         }
     }
     /**
